@@ -1,0 +1,89 @@
+{
+    "projectName": "ExtJS-Minification",
+    "builds": [
+    /** This file is for production purpose **/
+        {
+            "name": "ExtJS-Minification - Production",
+            "target": "all-app.js",
+            "compress": true,
+            "files": [
+            /** utils **/
+            
+                {
+                    "path": "app/util/",
+                    "name": "util.js"
+                },
+            /** models **/
+            	{
+                    "path": "app/model/",
+                    "name": "EmployeeModel.js"
+                },
+            /** stores **/
+             	{
+                    "path": "app/store/",
+                    "name": "EmployeeStore.js"
+                },
+            
+            /** view **/
+            	{
+                    "path": "app/view/",
+                    "name": "EmployeeGrid.js"
+                },
+			/** controllers **/
+             {
+                    "path": "app/controller/",
+                    "name": "AppController.js"
+             },	
+            /** app.js **/
+            
+             {
+                    "path": "",
+                    "name": "app.js"
+             }
+            ]
+        },
+        /** This file is for debug purpose **/
+        {
+             "name": "ExtJS-Minification - Debug",
+            "target": "all-app-debug.js",
+            "compress": false,
+            "files": [
+            /** utils **/
+            
+                {
+                    "path": "app/util/",
+                    "name": "util.js"
+                },
+            /** models **/
+            	{
+                    "path": "app/model/",
+                    "name": "EmployeeModel.js"
+                },
+            /** stores **/
+             	{
+                    "path": "app/store/",
+                    "name": "EmployeeStore.js"
+                },
+            
+            /** view **/
+            	{
+                    "path": "app/view/",
+                    "name": "EmployeeGrid.js"
+                },
+			/** controllers **/
+             {
+                    "path": "app/controller/",
+                    "name": "AppController.js"
+             },
+            
+            /** app.js **/
+            
+             {
+                    "path": "",
+                    "name": "app.js"
+             }
+            ]
+        }
+    ],
+    "resources" : []
+}
